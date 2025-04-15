@@ -1,6 +1,10 @@
+import Arun from "./at7"
 function App() {
   return (
-    <h1>Arun Tomar is working on React.js||87 🚀</h1>
+    <>
+    <Arun/>
+    <h1>add second element n</h1>
+    </>
   )
 }
  

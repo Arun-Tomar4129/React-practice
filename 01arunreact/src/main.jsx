@@ -3,9 +3,15 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-
+function Myapp(){
+ return (
+   <div>
+    <h1>coustom app</h1>
+  </div>
+ )
+}
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <App/>
   </StrictMode>
 )
