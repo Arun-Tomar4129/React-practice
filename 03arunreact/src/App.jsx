@@ -1,19 +1,24 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+import "./App.css"; // Ensure you have the CSS file for styling
 
 function Example() {
+  const [counter, setcounter] = useState(15);
+
+  const addvalue = () => {
+    setcounter(prevCounter => prevCounter + 5);
+  };
+
+  const removevalue = () => {
+    setcounter(prevCounter => prevCounter - 5);
+  };
+
   return (
-    <>
-    <h1 className="backround-blue">arun tomar  jkfjd</h1>
-    <p></p>
-    </>
-  )
+    <div className="container"> {/* Wrapped in a div with centering styles */}
+      <button onClick={addvalue} >Add Value {counter}</button> <br />
+      <button onClick={removevalue}>Remove Value</button>
+      <p>Footer: {counter}</p>
+    </div>
+  );
 }
-export default Example 
+
+export default Example;
