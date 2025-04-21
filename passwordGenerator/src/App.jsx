@@ -57,7 +57,7 @@ function App() {
               min={6}
               max={100}
               value={length}
-              className="cursor-pointer bg-amber-400 "
+              className="cursor-pointer bg-amber-400"
               onChange={(e) => setLength(Number(e.target.value))}
             />
             <label> Length:{length}</label>
